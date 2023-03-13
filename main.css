@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+:root {
+  --primaryColor: #ca7900;
+  --bkColor: #111111e0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: clamp(1.25rem, 1.0357rem + 1.0714vw, 2rem);
+}
+p {
+  font-size: 18px;
+}
+body {
+  background-color: var(--bkColor);
+  padding-bottom: 40px;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  border: 2px solid white;
+  color: white;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 5px 40px;
+  display: inline-block;
+  box-shadow: 2px 2px 2px black;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1290px;
+}
+
+/*NAV STYLES*/
+header {
+  background-color: var(--primaryColor);
+}
+.nav {
+  padding: 20px 40px;
+  justify-content: space-between;
+}
+.nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav > div {
+  cursor: pointer;
+}
+.nav > div img {
+  width: 20px;
+  margin-left: 20px;
+}
+
+/*INDEX STYLES*/
+.alert-area {
+  height: 100vh;
+
+  text-align: center;
+}
+.alert-area h1 {
+  margin: 60px 0 80px 0;
+}
+.card {
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--primaryColor);
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0 20px;
+}
+.card .btn:first-of-type {
+  margin-right: 20px;
+}
+.card p {
+  margin-top: 20px;
+}
+.card img {
+  position: absolute;
+  width: 70px;
+  top: -25px;
+}
+
+/*PRODUCTS*/
+.card__section {
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+.product {
+  flex-direction: column;
+}
+.products__section {
+  margin-top: 40px;
+  width: 90%;
+  max-width: 700px;
+  justify-content: space-between;
+}
+.product > img {
+  margin-bottom: 20px;
+  width: 70px;
+  height: 140px;
+}
+.product p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .products__section {
+    flex-direction: column;
+  }
+  .product {
+    margin-bottom: 40px;
+  }
+}
+/*MEDIAS*/
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav li {
+    display: block;
+    margin: 20px auto;
+  }
+  .nav > div {
+    margin-top: 20px;
+  }
+  .nav > div img {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 375px) {
+  .btn {
+    padding: 5px 35px;
+  }
+}
